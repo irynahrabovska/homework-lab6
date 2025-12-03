@@ -58,12 +58,12 @@ class FileManager:
 if __name__ == "__main__":
     fm = FileManager("test.yaml")
 
-    print("dедіть елементи (порожній рядок = завершити):")
+    print("ведіть елементи (порожній рядок = кінець):")
     while True:
         item = input("-> ")
         if not item:
             break
         fm.append(item)
 
-    print("\ndміст файлу:")
+    print("\nвміст файлу:")
     print(fm.read())
